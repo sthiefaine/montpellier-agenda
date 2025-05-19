@@ -93,7 +93,7 @@ async function fetchEvents(page: number = 1): Promise<EventsResponse> {
 
 export const getCachedEvents = unstable_cache(
   async (): Promise<Event[]> => {
-    const justFirstPage = true;
+    const justFirstPage = false;
     try {
       const firstPage = await fetchEvents(1);
       const totalPages = justFirstPage ? 1 : firstPage.lastPage;
