@@ -1,0 +1,16 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #1e293b;
+}
+
+.icon {
+  font-size: 1.25rem;
+}
+
+.date {
+  font-weight: 500;
+  text-transform: capitalize;
+}
